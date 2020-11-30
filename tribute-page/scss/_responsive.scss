@@ -1,0 +1,74 @@
+@media (min-width: $landscape-mode-breakpoint) {
+    
+    p {
+        margin: 2.5vw 5vw;
+        font-weight: $font-light;
+        font-size: $font-small;
+    }
+
+    h3 {
+        font-size: $font-supersmall;
+    }
+
+    .hero-image_container {
+        background-image: url(/tribute-page/img/arrival-desktop.jpg);
+    
+        h1 {
+            padding: 2vh 5vw 0 5vw;
+        }
+    
+        h2 {
+            margin: 0;
+        }
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .logogram-info {
+        
+        img {
+            width: 20vw;
+            height: auto;
+            max-width: 1500px;
+        }
+    }
+
+    .cards-container {
+        flex-direction: row;
+    }
+
+    .flip-card {
+        padding: 5vh;
+    }
+
+    .flip-card-image {
+        width: 20vw;
+    }
+
+    .starring-name {
+        font-size: $font-supersmall;
+    } 
+}
+
+@media (min-width: $tablet-breakpoint) {
+
+    .hero-image_container {
+
+        h1 {
+            padding: 10vh 5vw 0 5vw;
+        }
+    
+        h2 {
+            margin: 0;
+        }
+    }
+
+    .flip-card {
+        padding: 2vh;
+    }
+}
+
+    

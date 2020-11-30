@@ -1,0 +1,265 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  background-color: #d7e2e5;
+  margin: 0;
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2vh;
+  border-top: 1px solid #9b1504;
+  font-weight: 300;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin: 0;
+}
+
+h2 {
+  margin: 2vh 2vw;
+  font-weight: 200;
+  font-size: 300;
+  color: #9b1504;
+}
+
+h3 {
+  margin: 2vh auto;
+  font-weight: 200;
+  font-size: 0.8rem;
+  color: black;
+}
+
+p {
+  text-align: justify;
+  margin: 5vw;
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+.desktop-only {
+  display: none;
+}
+
+.justified {
+  text-align: justify;
+}
+
+.hero-image_container {
+  height: 100vh;
+  background-image: url(/tribute-page/img/arrival-mobile.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid #9b1504;
+}
+.hero-image_container h1 {
+  padding: 6.5vh 5vw 0.5vh 5vw;
+  font-weight: 200;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+.hero-image_container h2 {
+  padding: 0 2vw;
+  font-weight: 200;
+  font-size: 2rem;
+  color: black;
+}
+
+#logograms, #starring, #directed, #based-on {
+  margin: 5vh auto;
+  width: 90%;
+}
+
+.wrapper {
+  background-color: white;
+  -webkit-box-shadow: 0px 1px 4px #9b1504;
+          box-shadow: 0px 1px 4px #9b1504;
+  padding: 2vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 1vh;
+}
+
+.logogram-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.logogram-info img {
+  width: 35vw;
+  height: auto;
+  max-width: 1500px;
+}
+
+.cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flip-card {
+  padding: 2vh;
+  -webkit-box-shadow: 0px 1px 4px #61737a;
+          box-shadow: 0px 1px 4px #61737a;
+  border-radius: 40%;
+  margin: 1vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  overflow: hidden;
+}
+
+.flip-card-image {
+  width: 65vw;
+  height: auto;
+  max-width: 500px;
+  border-radius: 50%;
+}
+
+.flip-card--back h3 {
+  color: white;
+  margin: 0;
+}
+
+.media-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.media-item {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 400;
+}
+
+.media-logo {
+  height: 8vh;
+  width: auto;
+}
+
+.thanks, .authorship {
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.thanks {
+  padding-top: 2vh;
+}
+
+.authorship {
+  padding-bottom: 2vh;
+}
+
+@media (min-width: 560px) {
+  p {
+    margin: 2.5vw 5vw;
+    font-weight: 200;
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 0.75rem;
+  }
+
+  .hero-image_container {
+    background-image: url(/tribute-page/img/arrival-desktop.jpg);
+  }
+  .hero-image_container h1 {
+    padding: 2vh 5vw 0 5vw;
+  }
+  .hero-image_container h2 {
+    margin: 0;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .logogram-info img {
+    width: 20vw;
+    height: auto;
+    max-width: 1500px;
+  }
+
+  .cards-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .flip-card {
+    padding: 5vh;
+  }
+
+  .flip-card-image {
+    width: 20vw;
+  }
+
+  .starring-name {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 760px) {
+  .hero-image_container h1 {
+    padding: 10vh 5vw 0 5vw;
+  }
+  .hero-image_container h2 {
+    margin: 0;
+  }
+
+  .flip-card {
+    padding: 2vh;
+  }
+}
