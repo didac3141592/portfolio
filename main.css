@@ -217,11 +217,26 @@ a {
 }
 
 .project-miniature {
+    width: 80vw;
     height: 35vh;
-    position: relative;
-    right: 30%;
-}  
+    opacity: 0;
+}
 
+.tribute-page {
+    background-image: url(img/tribute-preview.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+}
+
+.survey-form {
+    background-image: url(img/survey-preview.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+}
 @media (min-width: 560px) {
     
     p.large-vh {
@@ -286,10 +301,9 @@ a {
     }
 
     .project-miniature {
+        width: 25vw;
         height: 35vh;
-        width: auto;
-        opacity: 0.7;
-    
+        opacity: 0;
     }
 }
 
@@ -300,8 +314,9 @@ a {
     }
 
     .project-miniature {
-        height: 25vw;
-        right: 50%;
+        width: 25vw;
+        height: 20vh;
+        opacity: 0;
     }
 }
 

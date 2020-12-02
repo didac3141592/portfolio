@@ -1,0 +1,20 @@
+footer {
+    text-align: center;
+    margin-top: 2vh;
+    border-top: 1px solid $main-contrast-color;
+    font-weight: 300;
+}
+
+.thanks, .authorship {
+    text-align: center;
+    font-size: map-get($map: $font-size, $key: 'footer');
+    margin: 0;
+}
+
+.thanks {
+    padding-top: 2vh;
+}
+
+.authorship {
+    padding-bottom: 2vh;
+}

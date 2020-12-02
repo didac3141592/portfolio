@@ -1,0 +1,338 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  background-color: whitesmoke;
+  color: black;
+  font-family: "Roboto Slab", monospace;
+  font-weight: 200;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  padding: 1vh 5vw;
+  text-align: center;
+}
+form label {
+  display: block;
+  margin: 2.5vh;
+}
+
+img {
+  width: 55%;
+  height: auto;
+  margin: 2vh auto;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 0px 1px 4px whitesmoke;
+          box-shadow: 0px 1px 4px whitesmoke;
+}
+
+textarea {
+  margin-bottom: 5vh;
+}
+
+.form-item {
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.85);
+          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.85);
+  margin: 2vh auto;
+  height: 25vh;
+  width: 85vw;
+  padding: 0 5vw;
+}
+.form-item label {
+  margin: 0;
+  padding-top: 8vh;
+  padding-bottom: 2vh;
+}
+.form-item p {
+  padding-top: 8vh;
+  padding-bottom: 2vh;
+}
+
+.personal-information .form-item {
+  background-color: rgba(0, 17, 255, 0.425);
+}
+
+.literature-information .form-item {
+  background-color: rgba(0, 255, 98, 0.404);
+}
+
+.movie-information .form-item {
+  background-color: rgba(243, 255, 70, 0.432);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 5vh;
+  padding-left: 2vw;
+}
+
+.grid-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 1vh 2.5vw;
+}
+.grid-element label {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  font-size: 0.8rem;
+  margin-left: 2vw;
+}
+
+.essential-questions .form-item {
+  background-color: rgba(255, 153, 70, 0.685);
+}
+.essential-questions .form-item p {
+  padding-top: 8vh;
+  padding-bottom: 2vh;
+}
+
+.height-inherit {
+  height: inherit;
+}
+
+.flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0 auto;
+  padding-bottom: 5vh;
+  padding-left: 25vw;
+}
+.flexbox label {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  font-size: 0.8rem;
+  margin-left: 2vw;
+}
+
+.lamar-radio label {
+  display: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.final-question .form-item {
+  background-color: rgba(255, 70, 70, 0.685);
+}
+
+@media (min-width: 560px) {
+  textarea {
+    margin-bottom: 20vh;
+  }
+
+  .form-item {
+    height: 55vh;
+  }
+  .form-item label {
+    padding-top: 20vh;
+  }
+  .form-item p {
+    padding-top: 20vh;
+    padding-bottom: 2vh;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-bottom: 0vh;
+  }
+
+  .grid-element {
+    margin: 0;
+  }
+  .grid-element label {
+    padding: 0;
+    margin: 0;
+  }
+
+  .no-bottom-margin {
+    margin-bottom: 10px;
+  }
+
+  .height-inherit {
+    height: inherit;
+  }
+}
+@media (min-width: 760px) {
+  textarea {
+    margin-bottom: 10vh;
+  }
+
+  .form-item {
+    width: 50vw;
+    height: 30vh;
+  }
+  .form-item label {
+    padding-top: 12vh;
+  }
+  .form-item p {
+    padding-top: 12vh;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 7vw;
+    padding-bottom: 10vh;
+  }
+
+  .grid-element {
+    margin: 0;
+  }
+  .grid-element label {
+    padding: 0;
+    margin: 0;
+  }
+
+  .flexbox {
+    padding-left: 15vw;
+  }
+  .flexbox label {
+    margin: 0;
+    padding: 0;
+  }
+
+  .height-inherit {
+    height: inherit;
+  }
+}
+/**
+ * Clear inner floats
+ */
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/**
+ * Main content containers
+ * 1. Make the container full-width with a maximum width
+ * 2. Center it in the viewport
+ * 3. Leave some space on the edges, especially valuable on small screens
+ */
+.container {
+  max-width: 1180px;
+  /* 1 */
+  margin-left: auto;
+  /* 2 */
+  margin-right: auto;
+  /* 2 */
+  padding-left: 20px;
+  /* 3 */
+  padding-right: 20px;
+  /* 3 */
+  width: 100%;
+  /* 1 */
+}
+
+/**
+ * Hide text while making it readable for screen readers
+ * 1. Needed in WebKit-based browsers because of an implementation bug;
+ *    See: https://code.google.com/p/chromium/issues/detail?id=457146
+ */
+.hide-text {
+  overflow: hidden;
+  padding: 0;
+  /* 1 */
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+/**
+ * Hide element while making it readable for screen readers
+ * Shamelessly borrowed from HTML5Boilerplate:
+ * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
+ */
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+header {
+  padding: 5vh 5vw;
+}
+@media (max-width: 760px) {
+  header {
+    height: 100vh;
+    padding: 20vh 5vw;
+  }
+}
+
+#title {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+#subtitle {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+#description {
+  text-align: justify;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2vh;
+  border-top: 1px solid #9b1504;
+  font-weight: 300;
+}
+
+.thanks, .authorship {
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.thanks {
+  padding-top: 2vh;
+}
+
+.authorship {
+  padding-bottom: 2vh;
+}

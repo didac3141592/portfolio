@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Survey Form | Date application</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Do you want a date with me?</h1>
+        <h2 id="subtitle">Apply now!</h2>
+        <p id="description">After year-long discussions, my HR team has agreed to create a standarized survey to receive your date applications. Due to the large number of submissions which follow several distinct formats, response times were gradually increasing. This hopes to make it easier both for you when it comes to introducing yourselves and for the team of advisors who decide which applications are worthy of a date.</p>
+    </header>
+    <body>
+        <form id="survey-form" action="https://survey-form-d.free.beeceptor.com" method="POST">
+            <div class="form-section personal-information">
+                <p>Let's start with some basic information about you</p>
+                <div class="form-item">
+                    <label id="number-label" for="age">How old are you?</label>
+                    <input type="number" id="age" name="age" min="18" max="100" placeholder="Age" required>
+                </div>
+                <div class="form-item">
+                    <label id="name-label" for="name">What's your name?</label>
+                    <input type="text" id="name" name="name" placeholder="Name" pattern="[a-zA-Zàáèéíòóúçñ]+" title="Enter a real name"required>
+                </div>
+                <div class="form-item">
+                    <label for="zodiac-sign">What are you?</label>
+                    <select name="zodiac-sign" id="dropdown" required>
+                        <option value="" disabled selected hidden>Sign</option>
+                        <option value="aries">Aries</option>
+                        <option value="taurus">Taurus</option>
+                        <option value="gemini">Gemini</option>
+                        <option value="cancer">Cancer</option>      
+                        <option value="leo">Leo</option>
+                        <option value="virgo">Virgo</option>
+                        <option value="libra">Libra</option>
+                        <option value="scorpio">Scorpio</option>
+                        <option value="saggitarius">Saggitarius</option>
+                        <option value="capricorn">Capricon</option>
+                        <option value="aquarius">Aquarius</option>
+                        <option value="pisces">Pisces</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-section literature-information">
+                <p>Now... books play a great role in my life, so this section is compulsory.</p>
+                <div class="form-item">
+                    <label for="last-book-read">Last book you read?</label>
+                    <input type="text" id="last-book-read" name="last-book-read" placeholder="e.g. The Great Gatsby">
+                </div>
+                <div class="form-item">
+                    <label for="book-reading">Book currently reading?</label>
+                    <input type="text" id="book-reading" name="book-reading" placeholder="e.g. War and Peace">
+                </div>
+                <div class="form-item">
+                    <label for="book-to-read">Next book in your to-read list?</label>
+                    <input type="text" id="book-to-read" name="book-to-read" placeholder="e.g. I, Robot">
+                </div>
+            </div>
+            <div class="form-section movie-information">
+                <p>Something similar happens with movies.</p>
+                <div class="form-item">
+                    <label for="most-watched-movie">Most watched movie? (non-animated)</label>
+                    <input type="text" id="most-watched-movie" name="most-watched-movie" placeholder="e.g. Inglourious Basterds">
+                </div>
+                <div class="form-item">
+                    <label for="most-watched-movie-animated">Most watched animated movie?</label>
+                    <input type="text" id="most-watched-movie-animated" name="most-watched-movie-animated" placeholder="e.g. Finding Nemo">
+                </div>
+                <div class="form-item pixar-checkbox height-inherit"> 
+                    <p>Which of the following movies are from Pixar Animation Studios?</p>
+                    <div class="wrapper">
+                        <div class="grid-element">
+                            <input type="checkbox" id="movie1" name="pixar-movies" value="despicable-me">
+                            <label for="movie1">Despicable me</label>   
+                        </div>
+                        <div class="grid-element">
+                            <input type="checkbox" id="movie2" name="pixar-movies" value="shrek">
+                        <label for="movie2">Shrek</label>
+                        </div>
+                        <div class="grid-element">
+                            <input type="checkbox" id="movie3" name="pixar-movies" value="up">
+                        <label for="movie3">Up</label>
+                        </div>
+                        <div class="grid-element">
+                            <input type="checkbox" id="movie4" name="pixar-movies" value="finding-nemo">
+                            <label for="movie4">Finding Nemo</label>
+                        </div>
+                        <div class="grid-element">
+                            <input type="checkbox" id="movie5" name="pixar-movies" value="coco">
+                            <label for="movie5">Coco</label>
+                        </div>
+                        <div class="grid-element">
+                            <input type="checkbox" id="movie6" name="pixar-movies" value="the-good-dinosaur">
+                            <label for="movie6">Inside Out</label>
+                        </div>
+                        <div class="grid-element">
+                            <input type="checkbox" id="movie7" name="pixar-movies" value="brave">
+                            <label for="movie7">Brave</label>
+                        </div>
+                        <div class="grid-element">
+                            <input type="checkbox" id="movie8" name="pixar-movies" value="spirit">
+                            <label for="movie8">Spirit</label>
+                        </div>
+                        <div class="grid-element">
+                            <input type="checkbox" id="movie9" name="pixar-movies" value="soul">
+                            <label for="movie9">Soul</label>
+                        </div>
+                        <div class="grid-element">
+                            <input type="checkbox" id="movie10" name="pixar-movies" value="soul">
+                            <label for="movie10">Frozen</label>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+            <div class="form-section essential-questions">
+                <p>We're almost done.</p>
+                <p>Be careful, the following questions are of great importance.</p>
+                <div class="form-item height-inherit">
+                    <label for="opinion-shrek">What is your opinion on the Shrek movies?</label>
+                    <textarea name="opinion-shrek" id="opinion-shrek" cols="30" rows="5" required>I think the Shrek movies are...</textarea>
+                </div>
+                <div class="form-item height-inherit">
+                    <p>Which is, in your opinion, the best Shrek movie?</p>
+                    <div class="flexbox">
+                        <div class="element">
+                            <input type="radio" name="shrek" id="shrek1" value="shrek1" required>
+                            <label for="shrek1">Shrek</label>
+                        </div>
+                        <div class="element">
+                            <input type="radio" name="shrek" id="shrek2" value="shrek2">
+                        <label for="shrek1">Shrek 2</label>
+                        </div>
+                        <div class="element">
+                            <input type="radio" name="shrek" id="shrek3" value="shrek3">
+                            <label for="shrek1">Shrek 3</label>
+                        </div>
+                        <div class="element">
+                            <input type="radio" name="shrek" id="shrek4" value="shrek4">
+                            <label for="shrek1">Shrek 4</label> 
+                        </div>    
+                    </div>  
+                </div>
+                <div class="form-item height-inherit">
+                    <p>Do you know who Kendrick Lamar is?</p>
+                    <div class="flexbox">
+                        <div class="element">
+                            <input type="radio" id="yes" name="kendrick" value="yes" required>
+                            <label for="yes">Yes</label>
+                        </div>
+                        <div class="element">
+                            <input type="radio" id="no" name="kendrick" value="no">
+                            <label for="no">No</label>   
+                        </div>    
+                    </div>
+                </div>  
+            </div>
+            <div class="form-section final-question">
+                <p>And... the final question!</p>
+                <div class="form-item height-inherit">
+                    <label for="arrival">What do you see in the following image?</label>
+                    <img src="img/818458.jpg" alt="">
+                    <textarea name="arrival" id="arrival" cols="30" rows="4">In the previous image I see...</textarea>
+                </div>
+            </div>
+            <div class="form-section ending-section">
+                <p>Congratulations!</p>
+                <p>That will be all on our end.</p>
+                <p>You're almost set. </p>
+                <p>Now we just need your contact information.</p>
+                <div>
+                    <label id="email-label" for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="You must enter a real email address" required>
+                </div>
+                <div>
+                    <label for="extra-info">Anything else you would like to add?</label>
+                    <textarea class="no-bottom-margin" name="extra-info" id="extra-info" cols="50" rows="5"></textarea>
+                </div>
+            </div>
+            <input type="submit" value="Submit">
+        </form>      
+    </body>
+    <footer>
+        <p class="thanks">Thank you for checking it out.</p>
+        <p class="authorship">This whole page has been designed from scratch by Dídac Pérez Escrich exclusively using plain HTML5 and CSS3.</p>
+    </footer>
+</body>
+</html>

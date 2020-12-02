@@ -1,0 +1,257 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    background-color: $background-color;
+    color: $main-dark-color;
+    font-family: $main-font;
+    font-weight: map-get($map: $font-weight, $key: 'light');
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    padding: 1vh 5vw;
+    text-align: center;
+
+    label {
+        display: block;
+        margin: 2.5vh;
+        
+    }
+}
+
+img {
+    width: 55%;
+    height: auto;
+    margin: 2vh auto;
+    background-color: $background-color;
+    box-shadow: 0px 1px 4px $background-color;
+}
+
+textarea {
+    margin-bottom: 5vh;
+}
+
+.form-item {
+    box-shadow: 0px 1px 4px $transparent-dark-color;
+    margin: 2vh auto;
+    height: 25vh;
+    width: 85vw;
+    padding: 0 5vw;
+    
+    label {
+        margin: 0;
+        padding-top: 8vh;
+        padding-bottom: 2vh;
+    }
+
+    p {
+        padding-top: 8vh;
+        padding-bottom: 2vh;
+    }
+    // padding: 10vh 15vw;
+  }
+
+.personal-information {
+    .form-item {
+          background-color: $card-color1;
+    }
+}
+
+.literature-information {
+    .form-item {
+          background-color: $card-color2;
+    }
+}
+
+.movie-information {
+    .form-item {
+          background-color: $card-color3;
+    }
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5vh;
+    padding-left: 2vw;
+}
+
+.grid-element {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1vh 2.5vw;
+
+    label {
+        display: inline;
+        margin: 0;
+        padding: 0;
+        font-size: map-get($map: $font-size, $key: 'footer' );
+        margin-left: 2vw;
+      }
+}
+
+.essential-questions {
+    .form-item {
+        background-color: $card-color4;
+
+        p {
+            padding-top: 8vh;
+            padding-bottom: 2vh;
+        }
+    }
+}
+
+.height-inherit {
+    height: inherit;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding-bottom: 5vh;
+    padding-left: 25vw;
+
+    label {
+        display: inline;
+        margin: 0;
+        padding: 0;
+        font-size: map-get($map: $font-size, $key: 'footer' );
+        margin-left: 2vw;
+    }
+}
+
+.lamar-radio {
+    label {
+        display: inherit;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.final-question {
+    .form-item {
+        background-color: $card-color5;
+    }
+}
+
+@media (min-width: map-get($map: $breakpoints, $key: 'landscape')) {
+
+    textarea {
+        margin-bottom: 20vh;
+    }
+    .form-item {
+        height: 55vh;
+
+        label {
+            padding-top: 20vh;
+        }
+        
+        p {
+            padding-top: 20vh;
+            padding-bottom: 2vh;
+        }
+    }
+
+    
+    .wrapper {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-bottom: 0vh;
+    }
+    
+    .grid-element {
+        margin: 0;
+    
+        label {
+            padding: 0;
+            margin: 0;
+          }
+    }
+
+    .no-bottom-margin {
+        margin-bottom: 10px;
+    }
+
+    .height-inherit {
+        height: inherit;
+    }
+
+
+}
+
+@media (min-width: map-get($map: $breakpoints, $key: 'tablet' )) {
+
+    textarea {
+        margin-bottom: 10vh;
+    }
+    .form-item {
+        width: 50vw;
+        height: 30vh;
+
+        label {
+            padding-top: 12vh;
+        }
+
+        p {
+            padding-top: 12vh;
+
+        }
+    }
+
+       
+    .wrapper {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 7vw;
+        padding-bottom: 10vh;
+    }
+
+    .grid-element {
+        margin: 0;
+    
+        label {
+            padding: 0;
+            margin: 0;
+          }
+    }
+
+    .flexbox {
+        padding-left: 15vw;
+
+        label {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+
+
+
+    .height-inherit {
+        height: inherit;
+    }
+
+
+
+}
+
+
+
+
+  

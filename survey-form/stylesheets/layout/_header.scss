@@ -1,0 +1,26 @@
+header {
+    padding: 5vh 5vw;
+
+
+    @media (max-width: map-get($map: $breakpoints, $key: 'tablet')) {
+        height: 100vh;
+        padding: 20vh 5vw;
+        
+    }
+}
+
+#title {
+    font-size: map-get($map: $font-size, $key: 'big');
+    font-weight: map-get($map: $font-weight, $key: 'bold');
+    margin: 0;
+
+}
+
+#subtitle {
+    font-size: map-get($map: $font-size, $key:'medium');
+    font-weight: map-get($map: $font-weight, $key: 'light');
+}
+
+#description {
+    text-align: justify;
+}

@@ -1,0 +1,98 @@
+// C O L O R S //
+
+/// background color
+/// @type Color
+$background-color: rgb(245, 245, 245) !default;
+// $background-color: rgba(0, 0, 0, 0.781) !default;
+/// main dark color
+/// @type Color
+$main-dark-color: rgb(0, 0, 0) !default;
+// $main-dark-color: rgb(245, 245, 245) !default;
+
+/// transparent dark color
+/// @type Color
+$transparent-dark-color: rgba(0, 0, 0, 0.85) !default;
+
+/// main light color
+/// @type Color
+$main-light-color: rgb(255, 255, 255) !default;
+
+/// contrast color #1
+/// @type Color
+$main-contrast-color: rgb(155, 21, 4) !default;
+
+/// contrast color #2
+/// @type Color
+$secondary-contrast-color: rgba(155, 21, 4, 0.65) !default;
+
+/// auxiliary color #1
+/// @type Color
+$auxiliary-color: rgb(97, 115, 122) !default;
+
+/// auxiliary color #2
+/// @type Color
+$secondary-auxiliary-color: rgb(204, 204, 202) !default;
+
+/// card set color #1
+/// @type Color
+$card-color1: rgba(0, 17, 255, 0.425) !default;
+
+/// auxiliary color #2
+/// @type Color
+$card-color2: rgba(0, 255, 98, 0.404) !default;
+
+/// auxiliary color #3
+/// @type Color
+$card-color3: rgba(243, 255, 70, 0.432) !default;
+
+/// auxiliary color #4
+/// @type Color
+$card-color4: rgba(255, 153, 70, 0.685) !default;
+
+/// auxiliary color #5
+/// @type Color
+$card-color5: rgba(255, 70, 70, 0.685) !default;
+
+
+
+
+///  F O N T  & F O N T  T Y P E S
+/// @type List
+$main-font: 'Roboto Slab', monospace;
+
+/// @prop {String} keys
+/// @prop {Map} values
+$font-weight: (
+    'light': 200,
+    'normal': 300,
+    'bold': 400,
+) !default;
+
+/// @prop {String} keys
+/// @prop {Map} values
+$font-size: (
+    'footer': 0.8rem,
+    'super-small': 0.75rem,
+    'small': 1rem,
+    'medium': 1.5rem,
+    'big': 2rem,
+) !default;
+
+
+// B R E A K P O I N T S
+/// @prop {String} keys
+/// @prop {Map} values
+$breakpoints: (
+    'landscape': 560px,
+    'tablet': 760px,
+    'laptop': 1024px,
+) !default;
+
+/// C O N T A I N E R ' S  M A X I M U M  W I D T H
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+
+
+
