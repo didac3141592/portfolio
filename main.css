@@ -315,7 +315,7 @@ a {
 
     .project-miniature {
         width: 25vw;
-        height: 20vh;
+        height: 20vw;
         opacity: 0;
     }
 }
