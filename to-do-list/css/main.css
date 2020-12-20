@@ -1,0 +1,362 @@
+:root {
+    --breakpoint_mobile: 375px;
+    --breakpoint_desktop: 1024px;
+
+    /* PRIMARY COLOR */
+    --color-primary: hsl(220, 98%, 61%);
+    --color-gradient-from: hsl(192, 100%, 67%);
+    --color-gradient-to: hsl(280, 87%, 65%);
+
+    /* L I G H T  T H E M E  C O L O R S */
+
+    /* COINTAINER COLOR */
+    --light-theme_very-light-gray: hsl(0, 0%, 98%);
+    /* BODY BACKGROUND COLOR */
+    --light-theme_very-light-grayish-blue: hsl(236, 33%, 92%);
+    /* DARKER TEXT COLOR */
+    --light-theme_very-dark-grayish-blue: hsl(235, 19%, 35%);
+    /* NOT SO DARK TEXT COLOR */
+    --light-theme_dark-grayish-blue: hsl(236, 9%, 61%);
+    /* LIGHT TEXT COLOR */
+    --light-theme_light-grayish-blue: hsl(233, 11%, 84%);
+    /* LIGHTER TEXT COLOR */
+    --dark-theme_light-grayish-blue-hoover: hsl(236, 33%, 92%);
+
+
+ 
+
+    /* D A R K  T H E M E  C O L O R S */
+
+    /* BODY BACKGROUND COLOR */
+    --dark-theme_very-dark-blue: hsl(235, 21%, 11%);
+    /* CONTAINER COLOR */
+    --dark-theme_very-dark-desaturated-blue: hsl(235, 24%, 19%);
+    /* LIGHTER TEXT COLOR */
+    --dark-theme_light-grayish-blue: hsl(234, 39%, 85%);
+    /* NOT SO LIGHT TEXT COLOR */
+    --dark-theme_dark-grayish-blue: hsl(234, 11%, 52%);
+    /* DARK TEXT COLOR */
+    --dark-theme_very-dark-grayish-blue: hsl(233, 14%, 35%);
+    /* DARKER TEXT COLOR */
+    --dark-theme_very-dark-grayish-blue-second: hsl(237, 14%, 26%);
+   
+    /* F O N T - R E L A T E D  V A R I A B L E S */
+    --font-size: 18px;
+    --font-normal: 400;
+    --font-bold: 700;
+}
+html {
+    box-sizing: border-box;  
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: var(--font-size);
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+h1 {
+    color: white;
+}
+button {
+    background-color: transparent;
+    border: none;
+}
+button:focus {
+    outline: none;
+}
+input {
+    background-color: transparent;
+    width: inherit;
+    height: inherit;
+    border: none;
+    border-radius: inherit;
+    padding-left: 2rem;
+}
+input:focus {
+    outline: none;
+}
+input::placeholder {
+    font-weight: var(--font-bold);
+}
+footer {
+    width: 100%;
+    margin: 0 auto;
+    font-size: small;
+    text-align: center;
+}
+footer > a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    padding: 1rem;
+}
+
+/* C L A S S E S   T H A T   D O   N O T   C H A N G E   W I T H   T H E M E  */
+.banner-image {
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.flexbox {
+    display: flex; 
+}
+.header-flexbox {
+    padding: 2.5rem 1.25rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+.title {
+    font-weight: var(--font-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin: 0;
+    padding: 0;
+}
+.d-none {
+    display: none;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+}
+.container-thinner {
+    height: 2rem;
+}
+.list-container {
+    width: 90%;
+    margin: 1rem auto;
+    border-radius: 0.5rem;
+}
+.active-task {
+    text-emphasis: none;;
+}
+.completed-task {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+.checkbox {
+    margin-right: 1rem;
+}
+.f-right {
+    float: right;
+}
+.controls-flexbox {
+    height: 3rem;
+    justify-content: space-evenly;  
+}
+.controls-flexbox button:hover {
+    color: var(--color-primary);
+}
+.control {
+    font-weight: var(--font-bold);
+}
+.filter-active {
+    color: var(--color-primary) !important;
+}
+.info {
+    text-align: center;
+}
+.pointer {
+    vertical-align: middle;
+}
+
+
+
+/* C H E C K B O X   C U S T O M I Z A T I O N */
+.checkbox-container {
+    display: block;
+    position: relative;     
+    padding-left: 2rem;
+}
+.checkbox-container .checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color:transparent;
+    cursor: pointer;
+}
+.checkbox-container input ~ .checkmark:hover {
+    background-image: url(/to-do-list/img/icon-check.svg), linear-gradient(var(--color-gradient-from), var(--color-gradient-to));
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-size: auto, cover;
+}
+.checkbox-container input:checked ~ .checkmark {
+    background-image: url(/to-do-list/img/icon-check.svg), linear-gradient(var(--color-gradient-from), var(--color-gradient-to));
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-size: auto, cover;
+}
+
+
+/* D A R K - T H E M E   C L A S S E S */
+.body-dark-theme {
+    background-color: var(--dark-theme_very-dark-blue)
+}
+.banner-dark-theme {
+    background-image: url(/to-do-list/img/bg-mobile-dark.jpg);
+}
+.container-dark-theme {
+    background-color: var(--dark-theme_very-dark-desaturated-blue);
+}
+.color-dark-theme-one {
+    color: var( --dark-theme_light-grayish-blue);
+}
+.color-dark-theme-two {
+    color: var(--dark-theme_dark-grayish-blue);
+}
+.color-dark-theme-three  {
+    color: var(--dark-theme_very-dark-grayish-blue);
+}
+.color-dark-theme-four {
+    color: var(--dark-theme_very-dark-grayish-blue-second);
+}
+.border-bottom-dark-theme {
+    opacity: 1;
+    border-bottom: 1px solid var(--dark-theme_very-dark-grayish-blue);
+}
+.border-button-dark-theme {
+    border: 1px solid rgba(255, 255, 255, 0.301);
+
+}
+/* L I G H T - T H E M E   C L A S S E S */
+.body-light-theme {
+    background-color: var(--light-theme_light-grayish-blue);
+}
+.banner-light-theme {
+    background-image: url(/to-do-list/img/bg-mobile-light.jpg);
+}
+.container-light-theme {
+    background-color: whitesmoke;
+}
+.color-light-theme-one {
+    color: var(--light-theme_very-dark-grayish-blue);
+}
+.color-light-theme-two {
+    color: var(--light-theme_dark-grayish-blue);
+}
+.color-light-theme-three {
+    color: var(--light-theme_light-grayish-blue:);
+}
+.color-light-theme-four {
+    color: var(--dark-theme_light-grayish-blue-hoover);
+}
+.border-bottom-light-theme {
+    opacity: 1;
+    border-bottom: 1px solid var(--light-theme_light-grayish-blue);
+}
+.border-button-light-theme {
+    border: 1px solid rgba(0, 0, 0, 0.356);
+}
+
+
+
+/* C US T O M - T H E M E   C L A S S E S  */
+
+
+
+
+/* M E D I A  Q U E R I E S  F O R  F U L L Y  R E S P O N S I V E N E S S  */
+@media (min-width: 560px) {
+    .banner-image {
+        padding-bottom: 4rem;
+    }
+}
+
+@media (min-width: 760px) {
+    .header-flexbox {
+        padding: 5rem;
+    }
+}
+
+@media (max-height: 820px ) {
+    @media (min-width: 620px) {
+        .banner-image {
+            padding-bottom: 4rem;
+        }
+        .header-flexbox {
+            padding: 2rem 1.25rem;
+        }
+    }
+}
+
+@media (min-width: 860px) {
+    .header-flexbox {
+        padding: 4rem 1.25rem;
+        padding-bottom: 1rem;
+        margin-bottom: 2.5rem;
+    }
+
+    @media (max-height: 380px) {
+        .banner-image {
+            padding-bottom: 4rem;
+        }
+        .header-flexbox {
+            padding: 2rem 1.25rem;
+            margin-bottom: 0;
+        }           
+    }
+}
+
+@media (min-width: 1020px) {
+    .banner-dark-theme {
+        background-image: url(/to-do-list/img/bg-desktop-dark.jpg);
+    }
+    .banner-light-theme {
+        background-image: url(/to-do-list/img/bg-desktop-light.jpg);
+    }
+    .banner-image {
+        padding-bottom: 2rem;
+    }
+    .header-flexbox {
+        padding: 2rem 6rem;
+        margin: 0;
+    }
+    .container {
+        width: 40%;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        height: 3.5rem;
+        border-radius: 0.5rem;
+    }
+    .container-thinner {
+        height: 2rem;
+    }
+    .list-container {
+        width: 40%;
+        margin: 1rem auto;
+        border-radius: 0.5rem;
+    }
+    .delete-task {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header-flexbox {
+        padding: 3rem 4rem;
+    }
+}

@@ -237,6 +237,14 @@ a {
     background-position: center;
     opacity: 0.7;
 }
+
+.to-do-list {
+    background-image: url(img/todo-preview.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+}
 @media (min-width: 560px) {
     
     p.large-vh {

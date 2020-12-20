@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
+  <title>To-do app | Task manager</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body id="dark" class="body-dark-theme">
+  <main>
+    <div class="banner-image banner-dark-theme">
+      <div class="flexbox header-flexbox">
+        <h1 class="title">Todo</h1>
+        <button id="to-light-theme"><img class="theme-img" src="img/icon-sun.svg" alt=""></button>
+        <button id="to-dark-theme" class="d-none"><img class="theme-img" src="img/icon-moon.svg" alt=""></button>
+      </div>
+      <div id="add-to-do" class="container container-dark-theme">
+        <input class="color-dark-theme-three" type="text" placeholder="Create a new To-Do...">
+      </div>
+    </div>
+
+    <div class="list-container container-dark-theme">
+      <ul>
+        <li draggable="true" class="active-task color-dark-theme-one border-bottom-dark-theme">
+          <label class="checkbox-container">
+            <span class="pointer">Buy soy milk</span>
+            <input class="checkbox" type="checkbox">
+            <span class="checkmark border-button-dark-theme"></span>
+            <button class="f-right delete-task d-none"><img src="img/icon-cross.svg" alt=""></button>
+          </label>
+        </li>
+        <li draggable="true" class="active-task color-dark-theme-one border-bottom-dark-theme">
+          <label class="checkbox-container">
+            <span class="pointer">Drink more water</span>
+            <input class="checkbox" type="checkbox">
+            <span class="checkmark border-button-dark-theme"></span>
+            <button class="f-right delete-task d-none"><img src="img/icon-cross.svg" alt=""></button>
+          </label>
+        </li>
+        <li draggable="true" class="active-task color-dark-theme-one border-bottom-dark-theme">
+          <label class="checkbox-container">
+            <span class="pointer">Pick up kids from school</span>
+            <input class="checkbox" type="checkbox">
+            <span class="checkmark border-button-dark-theme"></span>
+            <button class="f-right delete-task d-none"><img src="img/icon-cross.svg" alt=""></button>
+          </label>
+        </li>
+        <li draggable="true" class="active-task color-dark-theme-one border-bottom-dark-theme">
+          <label class="checkbox-container">
+            <span class="pointer">Read for 1h</span>
+            <input class="checkbox" type="checkbox">
+            <span class="checkmark border-button-dark-theme"></span>
+            <button class="f-right delete-task d-none"><img src="img/icon-cross.svg" alt=""></button>
+          </label>
+        </li>
+      </ul>
+      <div class="flexbox controls-flexbox">
+        <button id="items-left" class="color-dark-theme-four"><span id="items-left">Number</span> items left</button>
+        <button id="clear-completed" class="color-dark-theme-four">Clear Completed</button>
+      </div>
+    </div>
+    <div class="container container-thinner flexbox controls-flexbox container-dark-theme">
+      <button id="all-to-do" class="control filter-active color-dark-theme-three" active>All</button>
+      <button id="active-to-do" class="control color-dark-theme-three">Active</button>
+      <button id="completed-to-do" class="control color-dark-theme-three">Completed</button>
+    </div>
+
+    <div class="container container-thinner">
+      <p class="info color-dark-theme-four">Drag and drop to reorder list</p>
+    </div>
+  </main>
+  <footer class="color-dark-theme-three">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.github.com/goatbass">Eduard</a> & <a href="https://www.github.com/didac3141592">Dídac</a>.
+  </footer>
+</body>
+
+<script src="js/functions.js"></script>
+<script src="js/main.js"></script>
+</html>
