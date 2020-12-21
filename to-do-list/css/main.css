@@ -358,5 +358,7 @@ li {
 @media (min-width: 1200px) {
     .header-flexbox {
         padding: 3rem 4rem;
+        width: 40%;
+        margin: 0 auto;
     }
 }
