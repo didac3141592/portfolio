@@ -146,8 +146,14 @@ function addTask(task) {
         newItem.classList.add('color-light-theme-one');
         newItem.classList.add('border-bottom-light-theme');
     }
+
+    let borderButton;
+    if(document.body.id === 'dark') {
+        borderButton = 'border-button-dark-theme'
+    }
+    else borderButton = 'border-button-light-theme'
     newItem.setAttribute('draggable', 'true');
-    newItem.innerHTML = '<label class="checkbox-container"><span class="pointer">'+ task +'</span><input class="checkbox" type="checkbox"><span class="checkmark"></span><button class="d-none f-right delete-task"><img src="images/icon-cross.svg" alt=""></button></label>';
+    newItem.innerHTML = '<label class="checkbox-container"><span class="pointer">'+ task +'</span><input class="checkbox" type="checkbox"><span class="checkmark ' + borderButton +'"></span><button class="d-none f-right delete-task"><img src="images/icon-cross.svg" alt=""></button></label>'
     list.appendChild(newItem);
     let input = document.querySelector('input');
     input.value = "" 
