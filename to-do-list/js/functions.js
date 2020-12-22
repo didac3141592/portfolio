@@ -149,7 +149,7 @@ function addTask(task) {
         newItem.classList.add('border-bottom-light-theme');
         borderButton = 'border-button-light-theme';
     }
-    newItem.innerHTML = '<label class="checkbox-container"><span class="pointer">'+ task +'</span><input class="checkbox" type="checkbox"><span class="checkmark ' + borderButton +'"></span><button class="d-none f-right delete-task"><img src="images/icon-cross.svg" alt=""></button></label>';
+    newItem.innerHTML = '<label class="checkbox-container"><span class="pointer">'+ task +'</span><input class="checkbox" type="checkbox"><span class="checkmark ' + borderButton +'"></span><button class="d-none f-right delete-task"><img src="img/icon-cross.svg" alt=""></button></label>';
     list.appendChild(newItem);
     let input = document.querySelector('input');
     input.value = "" 
@@ -176,7 +176,7 @@ function addCompletedTask(task) {
         newItem.classList.add('border-bottom-light-theme');
         borderButton = 'border-button-light-theme';
     }
-    newItem.innerHTML = `<label class="checkbox-container"><span class="pointer">${task}</span><input class="checkbox" type="checkbox" checked><span class="checkmark ${borderButton}"></span><button class="d-none f-right delete-task"><img src="images/icon-cross.svg" alt=""></button></label>`;
+    newItem.innerHTML = `<label class="checkbox-container"><span class="pointer">${task}</span><input class="checkbox" type="checkbox" checked><span class="checkmark ${borderButton}"></span><button class="d-none f-right delete-task"><img src="img/icon-cross.svg" alt=""></button></label>`;
     list.appendChild(newItem);
     let input = document.querySelector('input');
     input.value = "" 
